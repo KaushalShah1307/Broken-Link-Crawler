@@ -22,6 +22,8 @@ LogfileDirectory=./log
 [EMAIL]
 EmailOutput=yes
 
+SMTPDomain=
+
 AdminEmailAddress=
 AdminEmailPassword=
 
