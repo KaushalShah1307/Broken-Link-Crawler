@@ -77,3 +77,18 @@ From here you can enter or browse for the filename of the XML sitemap, and click
 If your site has http authentication, then you will be asked to enter the username and password for the site. These details are not stored. 
 
 The script will carry out the test on every url, and then output a report of all the broken links found.
+
+### MailTrap
+Mailtrap(https://mailtrap.io/) is a fake SMTP server for development teams to test, view and share emails sent from the development and staging environments without spamming.
+
+**WARNING** These are stored in plain text, so the right priviledges should be granted to keep them as secure as possible.
+
+|Config option|Description|
+|-------------|-----------|
+EmailOutput|yes (default)
+SMTPDomain|smtp.mailtrap.io
+AdminEmailAddress|e343dbe4d45b50
+AdminEmailPassword|65bc8ce20b3425
+RecipientEmailAddresses|kaushalshah1307-06c563@inbox.mailtrap.io or one that you have setup for yourself
+
+If all has been set correctly, you can login to the mailtrap.io website and can see the emails coming thru.
