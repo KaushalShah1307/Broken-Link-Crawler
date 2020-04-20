@@ -1,0 +1,11 @@
+# Python files
+__pycache__
+*.pyc
+*.xml
+
+# Generated files
+broken_link_output.txt
+
+# Application files
+/log/*
+/conf/*

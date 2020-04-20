@@ -73,7 +73,7 @@ class LinkerGUI(tk.Frame):
         # Set title of window
         self.winfo_toplevel().title("Link Checker")
 
-        self.title = tk.Label(self, font='Helvetica 18', text="Linker - The broken link finder")
+        self.title = tk.Label(self, font='Helvetica 18', text="LinkChecker - The broken link finder")
         self.title.grid(row=0, columnspan=3, pady=20)
 
         self.intro_text = tk.Label(self, font='Helvetica 18', wraplength=600, text="To get started, browse for the file or enter the filename manually (with .xml extension) and click enter. \n The results will be outputted to the terminal immediately, and to a text file + listbox below after")

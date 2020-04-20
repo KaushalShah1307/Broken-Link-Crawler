@@ -185,7 +185,7 @@ def run():
 
     scan_date = datetime.datetime.now().strftime("%Y-%m-%d")
 
-    log_file_path = '{}/linker/{}/'.format(gen_conf['LogFileDirectory'], gen_conf['SiteName'])
+    log_file_path = '{}/Broken-Link-Crawler/{}/'.format(gen_conf['LogFileDirectory'], gen_conf['SiteName'])
     log_file_name = scan_date
     os.makedirs(log_file_path, exist_ok=True)
 
@@ -236,7 +236,7 @@ def run():
     if count_broken_links > 0:
         subject = "ALERT: Site Report for {} - {} Broken Links detected".format(gen_conf['SiteName'], count_broken_links)
         message = """
-        Linker Scan - FAILED, Broken links found
+        LinkChecker Scan - FAILED, Broken links found
         Site: {}
         Date Scanned: {}
         No. Broken Links: {} \n
@@ -263,7 +263,7 @@ def run():
         # Emails the output to address specified in config.ini
         subject = "PASSED: Site Report for {} - No Broken Links detected".format(gen_conf['SiteName'])
         message = """
-        Linker Scan - PASSED, No broken links found
+        LinkChecker Scan - PASSED, No broken links found
         Site: {}
         Date Scanned: {}
         """.format(gen_conf['SiteName'], scan_date)
